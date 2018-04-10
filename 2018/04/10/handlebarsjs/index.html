@@ -6,22 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://honghong0626.github.io">
-  <title>github+hexo搭建个人博客 | H-I</title>
+  <title>handlebarsjs笔记 | H-I</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="声明：本文为参照ryanluoxu原创文章 github 准备工作1、 注册githubNew Repository 创建一个以：***.github.ol结尾的Repository（项目的名称最好和github账户名一样,避免后面改css以及js的地址） Repository name: ***.github.io 勾选Initialize this repository with a REAM">
-<meta name="keywords" content="start">
+  <meta name="description" content="handlebars的讲解Handlebars 是 JavaScript 一个语义模板库,可以在加载的时候预编译，而不是到客户端执行代码时编译，如果接触过vue或者ng，会更好理解的 具体的可以参考官网http://handlebarsjs.com/ 安装 npm i handlebars –save 本地引入 SDN https://cdnjs.com/libraries/handlebars.">
+<meta name="keywords" content="js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github+hexo搭建个人博客">
-<meta property="og:url" content="https://honghong0626.github.io/2018/03/26/newBolg/index.html">
+<meta property="og:title" content="handlebarsjs笔记">
+<meta property="og:url" content="https://honghong0626.github.io/2018/04/10/handlebarsjs/index.html">
 <meta property="og:site_name" content="H-I">
-<meta property="og:description" content="声明：本文为参照ryanluoxu原创文章 github 准备工作1、 注册githubNew Repository 创建一个以：***.github.ol结尾的Repository（项目的名称最好和github账户名一样,避免后面改css以及js的地址） Repository name: ***.github.io 勾选Initialize this repository with a REAM">
+<meta property="og:description" content="handlebars的讲解Handlebars 是 JavaScript 一个语义模板库,可以在加载的时候预编译，而不是到客户端执行代码时编译，如果接触过vue或者ng，会更好理解的 具体的可以参考官网http://handlebarsjs.com/ 安装 npm i handlebars –save 本地引入 SDN https://cdnjs.com/libraries/handlebars.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://raw.githubusercontent.com/honghong0626/honghong0626.github.io/master/img/sittings.png">
-<meta property="og:updated_time" content="2018-04-08T03:00:06.858Z">
+<meta property="og:updated_time" content="2018-04-10T10:04:23.625Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="github+hexo搭建个人博客">
-<meta name="twitter:description" content="声明：本文为参照ryanluoxu原创文章 github 准备工作1、 注册githubNew Repository 创建一个以：***.github.ol结尾的Repository（项目的名称最好和github账户名一样,避免后面改css以及js的地址） Repository name: ***.github.io 勾选Initialize this repository with a REAM">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/honghong0626/honghong0626.github.io/master/img/sittings.png">
+<meta name="twitter:title" content="handlebarsjs笔记">
+<meta name="twitter:description" content="handlebars的讲解Handlebars 是 JavaScript 一个语义模板库,可以在加载的时候预编译，而不是到客户端执行代码时编译，如果接触过vue或者ng，会更好理解的 具体的可以参考官网http://handlebarsjs.com/ 安装 npm i handlebars –save 本地引入 SDN https://cdnjs.com/libraries/handlebars.">
   
     <link rel="alternative" href="/atom.xml" title="H-I" type="application/atom+xml">
   
@@ -155,50 +153,67 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-newBolg" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-handlebarsjs" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      github+hexo搭建个人博客
+      handlebarsjs笔记
     </h1>
   
 
         
-        <a href="/2018/03/26/newBolg/" class="archive-article-date">
-  	<time datetime="2018-03-26T09:41:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-26</time>
+        <a href="/2018/04/10/handlebarsjs/" class="archive-article-date">
+  	<time datetime="2018-04-10T09:08:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>声明：本文为参照<a href="https://www.zhihu.com/question/59088760/answer/265741938" target="_blank" rel="noopener">ryanluoxu</a>原创文章</p>
-<h3 id="github-准备工作"><a href="#github-准备工作" class="headerlink" title="github 准备工作"></a>github 准备工作</h3><h6 id="1、-注册github"><a href="#1、-注册github" class="headerlink" title="1、 注册github"></a>1、 注册github</h6><p>New Repository 创建一个以：***.github.ol结尾的Repository（项目的名称最好和github账户名一样,避免后面改css以及js的地址）</p>
-<p>Repository name: ***.github.io</p>
-<p>勾选Initialize this repository with a REAMECrate repository<br><a id="more"></a></p>
-<h6 id="2、-在项目的右上角有settings-进去-往下有一个-GitHub-Pages-如下图"><a href="#2、-在项目的右上角有settings-进去-往下有一个-GitHub-Pages-如下图" class="headerlink" title="2、 在项目的右上角有settings 进去 往下有一个 GitHub Pages (如下图)"></a>2、 在项目的右上角有settings 进去 往下有一个 GitHub Pages (如下图)</h6><p><img src="https://raw.githubusercontent.com/honghong0626/honghong0626.github.io/master/img/sittings.png" alt="图片"><br>Source (选中master branch —save)会自动生成一个链接 这就是之后项目打开的链接<br>我的就是<a href="https://honghong0626.github.io/">https://honghong0626.github.io/</a></p>
-<h3 id="安装node-git"><a href="#安装node-git" class="headerlink" title="安装node git"></a>安装node git</h3><p>官网均可以下载<br><a href="https://nodejs.org/en/" target="_blank" rel="noopener">node</a><br><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a></p>
-<p>node -v git -v  查询版本   </p>
-<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p> npm install -g hexo-cli 回车开始安装 安装完了之后可以 hexo -v得到hexo-cli:1.0.4…等一系列的数据</p>
-<h3 id="创建本地博客"><a href="#创建本地博客" class="headerlink" title="创建本地博客"></a>创建本地博客</h3><p> 我是c盘 （你们自己决定） 创建文件夹blog  鼠标右键Git Bash Here  可以看打开的命令窗口显示的是当前文件夹的位置</p>
-<p> 输入<br> hexo  init 初始化blog<br> npm install 安装依赖包<br> hexo g 生成网页（generate）<br> hexo s 生成的网页放在了本地服务器上 </p>
-<p> 在浏览器中输入 <a href="http://loaclhost:4000/就可以看到成果" target="_blank" rel="noopener">http://loaclhost:4000/就可以看到成果</a> 显示的一篇日志 hello world</p>
-<p> Git Bash 中  Ctrl+C  是结束命令</p>
-<h3 id="将本地博客推送到github上"><a href="#将本地博客推送到github上" class="headerlink" title="将本地博客推送到github上"></a>将本地博客推送到github上</h3><p>将本地 Hexo 博客部署在 Github 上前面两个部分，我们已经有了本地博客，和一个能托管这些资料的线上仓库。只要把本地博客部署（deploy）在我们的 Github 对应的 Repository 就可以了</p>
-<h6 id="1、获取github对应的Repository的链接"><a href="#1、获取github对应的Repository的链接" class="headerlink" title="1、获取github对应的Repository的链接"></a>1、获取github对应的Repository的链接</h6><p>登陆github: 进入到honghong0626.github.io<br>点击clone or download<br>复制url待用</p>
-<h6 id="2、-修改博客的配置文件"><a href="#2、-修改博客的配置文件" class="headerlink" title="2、 修改博客的配置文件"></a>2、 修改博客的配置文件</h6><p>打开配置文件blog/_config.yml找到#Deployment 填入一下内容：<br>deploy:<br>    type: git<br>    repository: 复制的url<br>    branch: master </p>
-<p>保存退出</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Git bash here : hexo g -d 推送到github上就好了 打开连接就可以看到项目</span><br></pre></td></tr></table></figure>
-<h3 id="新建日志"><a href="#新建日志" class="headerlink" title="新建日志"></a>新建日志</h3><p>hexo new “My first post”  在blog/source_posts下面就会有一个my-first-post.md的文件 编辑这个文件 文件是markdown格式 参考<a href="https://www.appinn.com/markdown/" target="_blank" rel="noopener">此链接</a><br>编辑完保存就好了 </p>
-<p>hexo s -g 看<a href="http://loackhost:4000/" target="_blank" rel="noopener">http://loackhost:4000/</a>  浏览器就会看到新建的日志<br>hexo g -d 打开github地址也可以查看</p>
-<h3 id="使用NEXT主题"><a href="#使用NEXT主题" class="headerlink" title="使用NEXT主题"></a>使用<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">NEXT主题</a></h3><p><a href="https://hexo.io/themes/" target="_blank" rel="noopener">更多的HEXO的主题看这里</a>也可以在github上搜索 hexo-theme</p>
-<p>操作如下：</p>
-<h6 id="1-Git-Bash"><a href="#1-Git-Bash" class="headerlink" title="1:Git Bash"></a>1:Git Bash</h6><p>输入：$ git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next</p>
-<h6 id="2-修改博客配置文件"><a href="#2-修改博客配置文件" class="headerlink" title="2:修改博客配置文件"></a>2:修改博客配置文件</h6><p>打开blog/_config.yml<br>找到 theme:<br>把 Hexo 默认的lanscape 修改成next  即：theme:next<br>找到 # Site 添加博客名称 作者名字等<br>在language后面填入 en或者zh-Hans  选择英文或者中文<br>找得到 #URL 填入url</p>
-<h6 id="3-重新生成部署即可"><a href="#3-重新生成部署即可" class="headerlink" title="3:重新生成部署即可"></a>3:重新生成部署即可</h6><p>回到Git Bash 输入 hexo g -d 就好了<br>先把修改的内容生成网页 在部署</p>
+        <h6 id="handlebars的讲解"><a href="#handlebars的讲解" class="headerlink" title="handlebars的讲解"></a>handlebars的讲解</h6><p>Handlebars 是 JavaScript 一个语义模板库,可以在加载的时候预编译，而不是到客户端执行代码时编译，如果接触过vue或者ng，会更好理解的 具体的可以参考官网<a href="http://handlebarsjs.com/" target="_blank" rel="noopener">http://handlebarsjs.com/</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul>
+<li>npm i handlebars –save 本地引入</li>
+<li>SDN <a href="https://cdnjs.com/libraries/handlebars.js" target="_blank" rel="noopener">https://cdnjs.com/libraries/handlebars.js</a>在里面选择一个地址</li>
+</ul>
+<h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><a id="more"></a>
+<ul>
+<li><p>先创建模板:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"root"</span>&gt;</span><br><span class="line">   &lt;script id=<span class="string">"tpl"</span> <span class="built_in">type</span>=<span class="string">"text/x-handlebars-template"</span>&gt; </span><br><span class="line">       &lt;div class=<span class="string">"demo"</span>&gt; </span><br><span class="line">           &lt;h1&gt;&#123;&#123;title&#125;&#125;&lt;/h1&gt; </span><br><span class="line">           &lt;p&gt;&#123;&#123;content.title&#125;&#125;&lt;/p&gt; </span><br><span class="line">       &lt;/div&gt;</span><br><span class="line">   &lt;/script&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>在js中预编译 将数据渲染 渲染的内容可以是当前的div 也可以在上面创建一个div2渲染到div2也可以 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//用jquery获取模板</span><br><span class="line">var tpl = $(<span class="string">"#tpl"</span>).html();</span><br><span class="line">//原生方法</span><br><span class="line">var <span class="built_in">source</span> = document.getElementById(<span class="string">'#tpl'</span>).innerHTML;</span><br><span class="line">//预编译模板</span><br><span class="line">var template = Handlebars.compile(<span class="built_in">source</span>);</span><br><span class="line">//模拟json数据</span><br><span class="line">var context = &#123; name: <span class="string">"zhaoshuai"</span>, content: <span class="string">"learn Handlebars"</span>&#125;;</span><br><span class="line">//匹配json内容</span><br><span class="line">var html = template(context);</span><br><span class="line">//输入模板</span><br><span class="line">$(<span class="string">'root'</span>).html(html);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h2><p>如果想遍历可以用到</p>
+<ul>
+<li><p>html</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"root"</span>&gt;</span><br><span class="line">   &lt;script id=<span class="string">"tpl"</span> <span class="built_in">type</span>=<span class="string">"text/x-handlebars-template"</span>&gt; </span><br><span class="line">       &lt;ul&gt; </span><br><span class="line">           &#123;&#123;<span class="comment">#programme&#125;&#125; </span></span><br><span class="line">               &lt;li&gt;&#123;&#123;language&#125;&#125;&lt;/li&gt;</span><br><span class="line">           &#123;&#123;/programme&#125;&#125;</span><br><span class="line">       &lt;/ul&gt;</span><br><span class="line">   &lt;/script&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>js <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">//原生方法</span><br><span class="line">var <span class="built_in">source</span> = document.getElementById(<span class="string">'#tpl'</span>).innerHTML;</span><br><span class="line">//预编译模板</span><br><span class="line">var template = Handlebars.compile(<span class="built_in">source</span>);</span><br><span class="line">//模拟json数据</span><br><span class="line">var context = &#123; </span><br><span class="line">    programme: [ </span><br><span class="line">        &#123;language: <span class="string">"JavaScript"</span>&#125;, </span><br><span class="line">        &#123;language: <span class="string">"HTML"</span>&#125;, </span><br><span class="line">        &#123;language: <span class="string">"CSS"</span>&#125;</span><br><span class="line">     ]&#125;;</span><br><span class="line"></span><br><span class="line">//匹配json内容</span><br><span class="line">var html = template(context);</span><br><span class="line">//输入模板</span><br><span class="line">$(<span class="string">'root'</span>).html(html);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="内置表达式"><a href="#内置表达式" class="headerlink" title="内置表达式"></a>内置表达式</h2><p>（这个要看清楚了 开始没有仔细看官网没有发现 each是内置的 还以为是自定义 坑了）</p>
+</li>
+<li><p>each<br>  <strong> 注意 this </strong>  就拿这个作为例子 其他的参考官网吧 （我也是初学）<br>html</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"root"</span>&gt;</span><br><span class="line">    &lt;script id=<span class="string">"entry-template"</span> <span class="built_in">type</span>=<span class="string">"text/x-handlebars-template"</span>&gt;</span><br><span class="line">            &lt;ul&gt;</span><br><span class="line">                &#123;&#123;<span class="comment">#each this&#125;&#125;</span></span><br><span class="line">                &lt;li&gt;</span><br><span class="line">                    &lt;h1 style=<span class="string">"color:&#123;&#123;color&#125;&#125;"</span>&gt;&#123;&#123;link&#125;&#125;&lt;/h1&gt;</span><br><span class="line">                &lt;/li&gt;</span><br><span class="line">                &#123;&#123;/each&#125;&#125;</span><br><span class="line">            &lt;/ul&gt;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>js</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">var navList = [&#123;</span><br><span class="line">            link: <span class="string">'1'</span>,</span><br><span class="line">            color: <span class="string">'rgb(232,84,32)'</span></span><br><span class="line">        &#125;, &#123;</span><br><span class="line">            link: <span class="string">'2'</span>,</span><br><span class="line">            color: <span class="string">'rgb(5,168,154)'</span></span><br><span class="line">        &#125;, &#123;</span><br><span class="line">            link: <span class="string">'3'</span>,</span><br><span class="line">            color: <span class="string">'#108ee9'</span></span><br><span class="line">        &#125;, &#123;</span><br><span class="line">            link: <span class="string">'4'</span>,</span><br><span class="line">            color: <span class="string">'#06a89a'</span></span><br><span class="line">        &#125;, &#123;</span><br><span class="line">            link: <span class="string">'5'</span>,</span><br><span class="line">            color: <span class="string">'#f3a346'</span></span><br><span class="line">        &#125;];</span><br><span class="line"></span><br><span class="line">        var <span class="built_in">source</span> = $(<span class="string">'#entry-template'</span>).html();</span><br><span class="line">        var template = Handlebars.compile(<span class="built_in">source</span>);</span><br><span class="line">        var html = template(navList);</span><br><span class="line">        document.getElementById(<span class="string">"div2"</span>).innerHTML = html</span><br></pre></td></tr></table></figure>
+<ul>
+<li>if else</li>
+<li>unless</li>
+<li>with</li>
+<li>lookup</li>
+<li>log</li>
+<li>blockHelperMissing</li>
+<li>helperMissing</li>
+</ul>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>可以自定义表达式 还有调试等等  后续更新。。。。。</p>
 
       
 
@@ -233,7 +248,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">start</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		
 		</ul>
@@ -289,7 +304,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://honghong0626.github.io/2018/03/26/newBolg/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://honghong0626.github.io/2018/04/10/handlebarsjs/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -303,15 +318,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/04/10/handlebarsjs/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          handlebarsjs笔记
-        
-      </div>
-    </a>
   
+    <a href="/2018/03/26/newBolg/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">github+hexo搭建个人博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
